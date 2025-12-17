@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-slate-950 text-slate-100">
+
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Main content -->
+    <main class="pt-24 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
+
+        <!-- ================= CONTACT HEADER ================= -->
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                Contact <span class="text-cyan-400">Us</span>
+            </h1>
+            <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Have questions, ideas, or want to collaborate with the Robotics Club?
+                Reach out to us anytime!
+            </p>
+        </section>
+
+        <!-- ================= CONTACT INFO + MAP ================= -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+
+            <!-- Contact Details -->
+            <div class="glass-card p-6 space-y-5">
+                <h2 class="text-2xl font-semibold mb-2">📍 Contact Information</h2>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:roboticsclub@nitp.ac.in" class="text-cyan-400 hover:underline">
+                        roboticsclub@nitp.ac.in
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    +91 9XXXXXXXXX
+                </p>
+
+                <p>
+                    <strong>Club Room:</strong>
+                    Mechanical Block, Room 204<br>
+                    NIT Patna
+                </p>
+
+                <p>
+                    <strong>Meetings:</strong>
+                    Every Wednesday & Saturday<br>
+                    5:00 PM – 7:00 PM
+                </p>
+
+                <!-- Social Media -->
+                <div class="pt-4">
+                    <h3 class="font-semibold mb-3">Connect with us</h3>
+                    <div class="flex gap-4 text-xl">
+                        <a href="#" class="hover:text-cyan-400"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="hover:text-cyan-400"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-cyan-400"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="glass-card p-4">
+                <h2 class="text-2xl font-semibold mb-4">🗺 Club Location</h2>
+                <!-- Static map image (replace later with Google Maps embed) -->
+                <img src="images/map-placeholder.jpg" alt="Robotics Club Location Map"
+                    class="rounded-lg w-full h-64 object-cover">
+                <!-- API-READY: Replace with Google Maps iframe -->
+            </div>
+
+        </section>
+
+        <!-- ================= CONTACT FORM ================= -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-semibold text-center mb-10">
+                📬 Send Us a Message
+            </h2>
+
+            <form id="contactForm" class="max-w-3xl mx-auto glass-card p-8 space-y-6">
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" name="name" required placeholder="Your Name" class="input-field">
+
+                    <input type="email" name="email" required placeholder="Your Email" class="input-field">
+                </div>
+
+                <input type="text" name="subject" placeholder="Subject" class="input-field">
+
+                <select name="purpose" class="input-field">
+                    <option>General Inquiry</option>
+                    <option>Join Club</option>
+                    <option>Event Question</option>
+                    <option>Collaboration</option>
+                </select>
+
+                <textarea name="message" rows="4" required placeholder="Your Message" class="input-field"></textarea>
+
+                <button type="submit" class="btn-primary w-full">
+                    Submit Message
+                </button>
+
+                <!-- Success Message -->
+                <p id="formSuccess" class="hidden text-green-400 text-center font-semibold">
+                    ✅ Message submitted successfully!
+                </p>
+
+                <!-- API-READY: Form submission endpoint goes here -->
+            </form>
+        </section>
+
+        <!-- ================= FAQ SECTION ================= -->
+        <section>
+            <h2 class="text-3xl font-semibold text-center mb-12">
+                ❓ Frequently Asked Questions
+            </h2>
+
+            <div class="max-w-4xl mx-auto space-y-4">
+
+                <details class="glass-card p-5">
+                    <summary class="font-semibold cursor-pointer">
+                        How can I join the Robotics Club?
+                    </summary>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">
+                        You can apply during the recruitment period announced on our website
+                        and social media pages.
+                    </p>
+                </details>
+
+                <details class="glass-card p-5">
+                    <summary class="font-semibold cursor-pointer">
+                        Do I need prior experience in robotics?
+                    </summary>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">
+                        No prior experience is required. We welcome beginners and provide
+                        training sessions.
+                    </p>
+                </details>
+
+                <details class="glass-card p-5">
+                    <summary class="font-semibold cursor-pointer">
+                        Can students from other branches join?
+                    </summary>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">
+                        Yes! Students from all branches are encouraged to join.
+                    </p>
+                </details>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "category": "club",
+    "title": "Weekly Robotics Club Strategy Meet",
+    "date": "15 Dec 2025",
+    "source": "Robotics Club NIT Patna",
+    "summary": "The Robotics Club conducted its weekly strategy meeting focusing on upcoming inter-college competitions, internal project deadlines, and research roadmap planning. Discussions included hardware procurement strategies, software integration timelines, AI-based automation pipelines, and collaborative task distribution among teams to ensure smooth execution of club initiatives.",
+    "link": null
+  },
+  {
+    "id": 2,
+    "category": "tech",
+    "title": "Boston Dynamics Unveils Advanced Humanoid Robot",
+    "date": "12 Dec 2025",
+    "source": "Boston Dynamics",
+    "summary": "Boston Dynamics has unveiled a next-generation humanoid robot capable of dynamic movement, real-time environment perception, and adaptive task execution. The robot leverages reinforcement learning, vision-based navigation, and precision actuators to safely operate in complex human-centric environments.",
+    "link": "https://www.bostondynamics.com"
+  },
+  {
+    "id": 3,
+    "category": "competition",
+    "title": "Indian Universities Shine at RoboCup Asia",
+    "date": "10 Dec 2025",
+    "source": "RoboCup Federation",
+    "summary": "Indian university teams delivered an impressive performance at RoboCup Asia, achieving top rankings in autonomous navigation, robotic soccer, and rescue simulation categories. The event highlighted rapid advancements in swarm robotics, multi-agent coordination, and AI-driven decision systems.",
+    "link": null
+  },
+  {
+    "id": 4,
+    "category": "research",
+    "title": "AI-Powered Surgical Robots Achieve Sub-Millimeter Accuracy",
+    "date": "08 Dec 2025",
+    "source": "IEEE Robotics",
+    "summary": "Recent research published by IEEE Robotics reports AI-assisted surgical robots achieving unprecedented sub-millimeter accuracy. These systems integrate computer vision, force feedback, and predictive modeling to enhance surgical precision, reduce human error, and improve patient safety during minimally invasive procedures.",
+    "link": "https://ieee.org"
+  }
+]

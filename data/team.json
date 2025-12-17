@@ -1,0 +1,38 @@
+{
+  "faculty": {
+    "name": "Dr. A. Kumar",
+    "designation": "Associate Professor",
+    "department": "Mechanical Engineering",
+    "image": "images/team/faculty.jpg",
+    "quote": "Robotics is not just about machines, it’s about innovation and teamwork."
+  },
+
+  "coreTeam": [
+    {
+      "name": "Abhinav Srivastava",
+      "role": "President",
+      "image": "images/team/president.jpg",
+      "linkedin": "#",
+      "github": "#",
+      "specialization": "Leadership",
+      "bio": "Leads club strategy, competitions, and collaborations."
+    },
+    {
+      "name": "Rohit Kumar",
+      "role": "Vice President",
+      "image": "images/team/vice.jpg",
+      "linkedin": "#",
+      "github": "#",
+      "specialization": "Operations",
+      "bio": "Handles internal operations and events."
+    }
+  ],
+
+  "members": [
+    { "name": "Amit Kumar", "role": "Embedded Systems", "group": "Hardware" },
+    { "name": "Neha Sharma", "role": "PCB Design", "group": "Hardware" },
+    { "name": "Saurabh Singh", "role": "ROS Developer", "group": "Software" },
+    { "name": "Riya Gupta", "role": "Computer Vision", "group": "AI" },
+    { "name": "Pooja Mishra", "role": "UI/UX Designer", "group": "Design" }
+  ]
+}

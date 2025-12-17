@@ -1,0 +1,170 @@
+<!-- ===================== FOOTER COMPONENT START ===================== -->
+<!--
+  Footer Component
+  Project: Robotics Club Website
+  Institution: NIT Patna
+  Purpose:
+  - Display club branding
+  - Provide quick navigation
+  - Show contact details
+  - Link social media platforms
+  - Future-ready for backend/API integration
+
+  NOTE:
+  - This footer is designed using Tailwind CSS CDN
+  - Fully responsive (mobile → desktop)
+  - Can be reused across all pages using JS include
+-->
+
+<footer class=" transition
+         bg-slate-100/80 text-slate-600
+         dark:bg-slate-900/60 dark:text-slate-300
+         backdrop-blur-xl
+         border-t border-slate-200 dark:border-white/10">
+
+  <!-- ===================== MAIN FOOTER GRID ===================== -->
+  <!--
+    Grid Layout:
+    - Mobile: 1 column
+    - Tablet: 2 columns
+    - Desktop: 4 columns
+  -->
+    <div></br></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+    <!-- ===================== CLUB INFO ===================== -->
+    <div>
+      <!-- Club Name -->
+      <h2 class="text-xl font-bold text-white tracking-wide">
+        Robotics Club
+      </h2>
+
+      <!-- Tagline -->
+      <p class="mt-3 text-sm leading-relaxed text-slate-400">
+        Code for Future Robotics 🚀
+        A student-driven technical club at NIT Patna focused on innovation,
+        automation, and intelligent systems.
+      </p>
+
+      <!-- Future API Comment -->
+      <!-- TODO (API): Fetch dynamic club description from backend -->
+    </div>
+
+    <!-- ===================== QUICK LINKS ===================== -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">
+        Quick Links
+      </h3>
+
+      <!-- Navigation Links -->
+      <ul class="space-y-2 text-sm">
+        <!-- Use same filenames as your project pages -->
+        <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-cyan-400 transition">About</a></li>
+        <li><a href="projects.html" class="hover:text-cyan-400 transition">Projects</a></li>
+        <li><a href="events.html" class="hover:text-cyan-400 transition">Events</a></li>
+        <li><a href="team.html" class="hover:text-cyan-400 transition">Team</a></li>
+        <li><a href="news.html" class="hover:text-cyan-400 transition">News</a></li>
+        <li><a href="achievements.html" class="hover:text-cyan-400 transition">Achievements</a></li>
+        <li><a href="contact.html" class="hover:text-cyan-400 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- ===================== CONTACT INFORMATION ===================== -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">
+        Contact Us
+      </h3>
+
+      <ul class="space-y-3 text-sm">
+        <!-- Email -->
+        <li class="flex items-start gap-2">
+          <span>📧</span>
+          <span>roboticsclub@nitp.ac.in</span>
+        </li>
+
+        <!-- Location -->
+        <li class="flex items-start gap-2">
+          <span>📍</span>
+          <span>
+            Ashok Rajpath, National Institute of Technology Patna, Incubation Center 3rd Floor - 800005
+          </span>
+        </li>
+      </ul>
+
+      <!-- Future API Comment -->
+      <!-- TODO (API): Load contact details dynamically -->
+    </div>
+
+    <!-- ===================== SOCIAL MEDIA LINKS ===================== -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">
+        Connect With Us
+      </h3>
+
+      <!-- Social Icons -->
+      <!--
+        Icons can be replaced with Font Awesome later
+        For now, using emojis for simplicity
+      -->
+      <div class="flex gap-4 text-xl">
+        <a href="https://www.linkedin.com/company/robotics-club-nit-patna/" class="hover:text-cyan-400 transition"
+          aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/robotics_club_nitp/" class="hover:text-pink-400 transition"
+          aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="http://facebook.com/robonitp" class="hover:text-blue-400 transition" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+
+      <!-- Social Media Handles -->
+      <p class="text-sm text-slate-400 mt-4">
+        Follow us for updates, events, and achievements in robotics.
+      </p>
+
+      <!-- Future API Comment -->
+      <!-- TODO (API): Fetch social media links from backend -->
+    </div>
+
+  </div>
+
+  <!-- ===================== FOOTER BOTTOM BAR ===================== -->
+  <!--
+    Contains:
+    - Copyright
+    - Credits
+  -->
+  <div class="border-t border-slate-800 mt-12 py-6">
+    <div
+      class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-sm text-slate-400 gap-2">
+
+      <!-- Copyright -->
+      <p>
+        © 2025 Robotics Club, NIT Patna. All rights reserved.
+      </p>
+
+      <!-- Credits -->
+      <p>
+        Designed & Developed by <span class="text-cyan-400 font-medium">Club Members</span>
+      </p>
+
+      <!-- Future API Comment -->
+      <!-- TODO (API): Auto-update year using backend -->
+    </div>
+  </div>
+
+  <!-- ===================== SCROLL TO TOP BUTTON ===================== -->
+  <button id="scrollToTopBtn" aria-label="Scroll to top" class="fixed bottom-6 right-6 z-50 hidden
+         bg-cyan-500 hover:bg-cyan-600
+         dark:bg-cyan-400 dark:hover:bg-cyan-500
+         text-black dark:text-black
+         p-3 rounded-full shadow-lg transition-all duration-300">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+</footer>
+<!-- ===================== FOOTER COMPONENT END ===================== -->

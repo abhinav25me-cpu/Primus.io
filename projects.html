@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robotics Club NIT Patna – Projects</title>
+
+  <!-- ================= TAILWIND CDN CONFIG ================= -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#38bdf8'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- ================= ICONS ================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- ================= GLOBAL CSS ================= -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- ================= PAGE-SPECIFIC STYLES ================= -->
+  <style>
+    /* Filter dropdown styling */
+    .filter-input {
+      padding: 0.6rem 1rem;
+      border-radius: 0.75rem;
+      border: 1px solid #374151;
+      background-color: #020617;
+    }
+
+    .filter-input:focus {
+      outline: none;
+      border-color: #38bdf8;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 ">
+
+  <!-- ================= NAVBAR ================= -->
+  <div id="navbar-container"></div>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <main class="min-h-screen px-4 md:px-10 py-24 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200">
+    <!-- Header -->
+    <header class="text-center max-w-4xl mx-auto mb-16">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Projects</h1>
+      <p class="text-gray-400">
+        Explore innovative robotics projects developed by club members across domains such as drones,
+        automation, artificial intelligence, and IoT systems.
+      </p>
+    </header>
+
+    <!-- Filters -->
+    <section class="flex flex-col sm:flex-row gap-4 justify-center mb-14">
+      <input id="searchInput" type="text" placeholder="Search projects..." class="filter-input w-full sm:w-72" />
+      <select id="yearFilter" class="filter-input"></select>
+      <select id="typeFilter" class="filter-input"></select>
+    </section>
+
+
+    <!-- Projects Grid -->
+    <section id="projectsGrid" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Injected via JS -->
+    </section>
+
+  </main>
+
+  <!-- ================= PROJECT MODAL ================= -->
+  <div id="modalLinks" class="flex gap-4"></div>
+  <div id="projectModal"
+    class="fixed inset-0 hidden z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
+    <div class="bg-slate-900 rounded-2xl max-w-2xl w-[90%] p-6 relative shadow-2xl">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <img id="modalImage" class="rounded-xl mb-4 w-full object-cover max-h-64" alt="Project image" />
+      <h2 id="modalTitle" class="text-2xl font-semibold mb-2"></h2>
+      <p id="modalDesc" class="text-gray-400 mb-4"></p>
+      <p class="text-sm mb-1"><span class="font-semibold">Technologies:</span> <span id="modalTech"></span></p>
+      <p class="text-sm"><span class="font-semibold">Team:</span> <span id="modalTeam"></span></p>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div id="footer-container"></div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="data/projects.json"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/modals.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

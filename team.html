@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club NITP - Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ================= GLOBAL CSS ================= -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-slate-950 text-slate-100">
+
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <main class="max-w-7xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- ================= Faculty Advisor ================= -->
+        <section>
+            <h2 class="section-title">Faculty Advisor</h2>
+
+            <div class="mt-10 flex flex-col md:flex-row items-center gap-8 glass-card p-8">
+                <img src="images/team/faculty.jpg" alt="Faculty Advisor"
+                    class="w-40 h-40 rounded-full object-cover border-4 border-cyan-500" />
+
+                <div>
+                    <h3 class="text-2xl font-semibold">Dr. A. Kumar</h3>
+                    <p class="text-sm text-cyan-500">Associate Professor · Mechanical Engineering</p>
+
+                    <blockquote class="mt-4 italic text-slate-600 dark:text-slate-400">
+                        “Robotics is not just about machines, it’s about creativity, teamwork,
+                        and solving real-world problems.”
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Core Team ================= -->
+        <section>
+            <h2 class="section-title">Core Team</h2>
+
+            <div id="coreTeamGrid" class="mt-12 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Injected by team.js -->
+            </div>
+        </section>
+
+        <!-- ================= Team Members ================= -->
+        <section>
+            <h2 class="section-title">Team Members</h2>
+
+            <div id="teamGroups" class="mt-12 space-y-12">
+                <div class="flex flex-wrap gap-4 mt-6">
+                    <button class="filter-btn active" data-filter="All">All</button>
+                    <button class="filter-btn" data-filter="Hardware">Hardware</button>
+                    <button class="filter-btn" data-filter="Software">Software</button>
+                    <button class="filter-btn" data-filter="AI">AI</button>
+                    <button class="filter-btn" data-filter="Design">Design</button>
+                </div>
+
+                <div id="teamMembers" class="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+
+            </div>
+        </section>
+
+        <!-- ================= Alumni ================= -->
+        <section>
+            <h2 class="section-title">Notable Alumni</h2>
+
+            <div class="mt-10 grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-6">
+                    <h3 class="font-semibold text-lg">Rahul Verma</h3>
+                    <p class="text-sm text-slate-500">Robotics Engineer · ABB</p>
+                    <p class="mt-2 text-sm">
+                        Led national-level robotics competitions and now works on
+                        industrial automation systems.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6">
+                    <h3 class="font-semibold text-lg">Sneha Singh</h3>
+                    <p class="text-sm text-slate-500">MS Robotics · Germany</p>
+                    <p class="mt-2 text-sm">
+                        Researcher in autonomous systems and AI-driven robotics.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="profileModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+        <div class="bg-white dark:bg-slate-900 p-8 rounded-xl max-w-md w-full relative">
+            <button id="closeModal" class="absolute top-4 right-4 text-xl">&times;</button>
+
+            <img id="modalImg" class="w-28 h-28 mx-auto rounded-full mb-4" />
+            <h3 id="modalName" class="text-xl font-semibold text-center"></h3>
+            <p id="modalRole" class="text-center text-cyan-500"></p>
+            <p id="modalBio" class="mt-4 text-sm text-center"></p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

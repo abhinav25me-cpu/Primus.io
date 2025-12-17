@@ -1,0 +1,204 @@
+/* ================= GLOBAL GLASS CARD ================= */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+/* ================= EVENT TEXT ================= */
+.event-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #22d3ee;
+}
+
+.event-meta {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+.event-desc {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  margin-top: 0.75rem;
+}
+
+/* ================= BUTTONS ================= */
+.event-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 9999px;
+  background-color: #22d3ee;
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.event-btn:hover {
+  background-color: #06b6d4;
+}
+
+/* ================= FILTER BUTTON ================= */
+.filter-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #22d3ee;
+  color: #000;
+}
+
+/* ================= IMAGES ================= */
+.event-img {
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ================= SCROLL ANIMATION ================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Achievements Page ===== */
+
+.section-title {
+  @apply text-3xl font-bold mb-6;
+}
+
+.stat-card {
+  @apply bg-white dark:bg-slate-800 rounded-2xl p-6 shadow text-center;
+}
+
+.stat-number {
+  @apply text-4xl font-bold text-blue-600 dark:text-cyan-400;
+}
+
+.achievement-card {
+  @apply bg-white dark:bg-slate-900 rounded-xl shadow overflow-hidden p-4;
+}
+
+.achievement-card img {
+  @apply rounded-lg mb-3;
+}
+
+.meta {
+  @apply text-sm text-slate-500;
+}
+
+.publication-item {
+  @apply bg-white dark:bg-slate-800 p-5 rounded-xl shadow;
+}
+
+.award-card {
+  @apply bg-white dark:bg-slate-900 p-6 rounded-xl shadow;
+}
+
+.timeline {
+  @apply border-l-4 border-blue-500 pl-6 space-y-8;
+}
+
+.timeline-item span {
+  @apply text-blue-600 font-bold;
+}
+
+
+/* News UI */
+.news-filter-btn {
+  @apply px-4 py-2 rounded-full border border-slate-300 dark:border-slate-700
+         hover:bg-blue-600 hover:text-white transition;
+}
+.news-filter-btn.active {
+  @apply bg-blue-600 text-white;
+}
+.news-card {
+  @apply bg-white dark:bg-slate-900 p-6 rounded-2xl shadow
+         hover:-translate-y-1 transition;
+}
+.news-title {
+  @apply text-xl font-bold mb-2;
+}
+.news-meta {
+  @apply text-sm text-slate-500 mb-3;
+}
+.news-summary {
+  @apply text-sm text-slate-600 dark:text-slate-400;
+}
+.read-more-btn {
+  @apply mt-4 text-blue-600 font-semibold;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glass-card {
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    outline: none;
+}
+
+.btn-primary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(to right, #06b6d4, #3b82f6);
+    font-weight: 600;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Filter Buttons */
+.filter-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #22d3ee;
+  font-size: 14px;
+}
+.filter-btn.active {
+  background: #22d3ee;
+  color: #000;
+}

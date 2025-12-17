@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achievements | Robotics Club</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100">
+
+  <!-- Navbar injected by main.js -->
+  <div id="navbar-container"></div>
+
+  <!-- ================= ACHIEVEMENTS HERO ================= -->
+  <section class="py-20 text-center bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Achievements</h1>
+    <p class="max-w-2xl mx-auto text-lg opacity-90">
+      Celebrating our victories, innovations, and recognition over the years.
+    </p>
+  </section>
+
+  <!-- ================= STATS COUNTER ================= -->
+  <section class="py-16 max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="stat-card">
+        <h2 class="stat-number" data-target="45">0</h2>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-card">
+        <h2 class="stat-number" data-target="18">0</h2>
+        <p>Competitions Won</p>
+      </div>
+      <div class="stat-card">
+        <h2 class="stat-number" data-target="12">0</h2>
+        <p>Research Papers</p>
+      </div>
+      <div class="stat-card">
+        <h2 class="stat-number" data-target="8">0</h2>
+        <p>Grants & Awards</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPETITION WINS ================= -->
+  <section class="py-16 bg-slate-100 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title">🏆 Competition Wins</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="achievement-card">
+          <img src="images/achievements/competition1.jpg" alt="Competition win" />
+          <h3>Smart India Hackathon</h3>
+          <p class="meta">2024 · 🥇 First Prize</p>
+          <p>Team Alpha — Autonomous Robotics Track</p>
+        </div>
+
+        <div class="achievement-card">
+          <img src="images/achievements/competition2.jpg" alt="Competition win" />
+          <h3>Robowars Nationals</h3>
+          <p class="meta">2023 · 🥈 Runner Up</p>
+          <p>Combat Robotics Team</p>
+        </div>
+
+        <div class="achievement-card">
+          <img src="images/achievements/competition3.jpg" alt="Competition win" />
+          <h3>e-Yantra Robotics</h3>
+          <p class="meta">2022 · Finalist</p>
+          <p>AI & Embedded Systems Team</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESEARCH PUBLICATIONS ================= -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title">📄 Research Publications</h2>
+
+      <ul class="mt-8 space-y-4">
+        <li class="publication-item">
+          <h4>Autonomous Navigation Using Vision Sensors</h4>
+          <p>IEEE ICAR · 2024</p>
+          <span>Authors: A. Kumar, R. Singh</span>
+        </li>
+
+        <li class="publication-item">
+          <h4>AI-Based Object Grasping Robot</h4>
+          <p>Springer Robotics Journal · 2023</p>
+          <span>Authors: Team Robotics Club</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= GRANTS & AWARDS ================= -->
+  <section class="py-16 bg-slate-100 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title">🎖 Innovation Grants & Awards</h2>
+
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        <div class="award-card">
+          <h3>DRDO Student Innovation Grant</h3>
+          <p>DRDO · 2024</p>
+          <span>₹5,00,000</span>
+        </div>
+
+        <div class="award-card">
+          <h3>AICTE Robotics Excellence Award</h3>
+          <p>AICTE · 2023</p>
+          <span>₹2,00,000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TIMELINE ================= -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="section-title text-center">📅 Achievement Timeline</h2>
+
+      <div class="timeline mt-12">
+        <div class="timeline-item">
+          <span>2022</span>
+          <p>First National Level Competition Finalist</p>
+        </div>
+        <div class="timeline-item">
+          <span>2023</span>
+          <p>Published First Research Paper</p>
+        </div>
+        <div class="timeline-item">
+          <span>2024</span>
+          <p>Won Smart India Hackathon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer injected by main.js -->
+  <div id="footer-container"></div>
+
+  <!-- Global JS -->
+  <script defer src="js/main.js"></script>
+</body>
+
+</html>

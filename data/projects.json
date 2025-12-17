@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Autonomous Surveillance Drone",
+    "year": "2025",
+    "type": "Drone",
+    "image": "images/projects/drone.jpg",
+    "github": "https://github.com",
+    "demo": "",
+    "tech": ["Pixhawk", "ROS", "OpenCV", "GPS Navigation"],
+    "team": ["Abhinav Srivastava", "Rohit Singh"],
+    "description": "An autonomous quadcopter developed for real-time aerial surveillance and obstacle avoidance using computer vision and waypoint navigation."
+  },
+  {
+    "id": 2,
+    "title": "6-DOF Industrial Robotic Arm",
+    "year": "2024",
+    "type": "Robotic Arm",
+    "image": "images/projects/robotic-arm.jpg",
+    "github": "https://github.com",
+    "demo": "",
+    "tech": ["Arduino Mega", "Servo Motors", "Kinematics", "Fusion 360"],
+    "team": ["Sneha Verma", "Piyush Das"],
+    "description": "A six-degree-of-freedom robotic arm designed for precision pick-and-place operations with focus on kinematics and motion planning."
+  },
+  {
+    "id": 3,
+    "title": "AI Vision Sorting System",
+    "year": "2025",
+    "type": "AI",
+    "image": "images/projects/ai-vision.jpg",
+    "github": "https://github.com",
+    "demo": "",
+    "tech": ["Python", "TensorFlow", "OpenCV"],
+    "team": ["Nikhil Gupta", "Mohd. Ali"],
+    "description": "An AI-powered vision system that classifies and sorts objects on a conveyor belt using deep learning models."
+  }
+]
